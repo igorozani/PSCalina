@@ -25,13 +25,13 @@ try {
 	$mail->Host       = 'smtp.live.com';                    	// Set the SMTP server to send through
 	$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
 	$mail->Username   = 'ig_igor_lr@hotmail.com';               // SMTP username
-	$mail->Password   = 'IgUiN10';                               // SMTP password
+	$mail->Password   = '**********';                               // SMTP password
 	$mail->SMTPSecure = 'tls';         							// Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
 	$mail->Port       = 587;                                    // TCP port to connect to
 
 	//Recipients
 	$mail->setFrom("ig_igor_lr@hotmail.com");
-	$mail->addAddress("igorozani@gmail.com");    				 // Add a recipient
+	$mail->addAddress("leandro@calina.ag");    				 // Add a recipient
   
   
 	// Content
