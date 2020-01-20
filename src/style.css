@@ -40,13 +40,39 @@ html {
 }
 
 .borda-cor-especial {
-  border-color: darkgreen;
+  border-color: darkgreen; 
 }
+
 
 .btn-cor-especial {
   background-color: darkgreen;
   color: white;
 }
+
+.botao {
+	text-align:center;
+	margin-bottom:4.5rem;
+}
+
+.btn-especial {
+	width:18rem;
+	height:3.2rem;
+	font-size:1.275rem;
+}
+
+.success-img{
+	width:150px;
+	height:150x;
+}
+
+.error-img {
+	width:150px;
+	height:150px;
+}
+
+.no-margin{
+	margin-bottom:0;
+	}
 
 #cor-titulo {
   color: darkgreen;

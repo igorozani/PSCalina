@@ -18,16 +18,16 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">início<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Início<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#receitas">receitas</a>
+            <a class="nav-link" href="#receitas">Receitas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#quem-somos">quem somos</a>
+            <a class="nav-link" href="#depoimentos">Depoimentos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="modal" data-target="#modal-contato" href="#">contato</a>
+            <a class="nav-link" href="#footer">Contato</a>
           </li>
         </ul>
       </div>
@@ -37,7 +37,7 @@
   <main>
 
     <section id="carrossel-principal">
-      <div id="carousel-controladores" class="carousel slide" data-ride="carousel" data-interval="3000">
+      <div id="carousel-controladores" class="carousel slide" data-ride="carousel" data-interval="4000">
         <ol class="carousel-indicators">
           <li data-target="#carousel-controladores" data-slide-to="0" class="active"></li>
           <li data-target="#carousel-controladores" data-slide-to="1"></li>
@@ -72,6 +72,9 @@
         <h1 class="text-center texto-cor-especial fonte-titulo">Receitas para economizar e ganhar saúde</h1>
         <p class="text-center text-secondary">Nossas receitas ajudam na sua dieta vegana e contribuem com o meio ambiente, os animais e a sociedade</p>
       </div>
+	  <div class="botao">
+			<input type="submit" class="btn btn-cor-especial btn-especial" data-toggle="modal" data-target="#modal-contato" value="Conheça nossas receitas!">
+		</button>
     </section>
 
     <section id="receitas" class="bg-light">
@@ -83,7 +86,6 @@
             <div class="card-body">
               <h5 class="card-title">Hambúrguer de grão-de-bico</h5>
               <p class="card-text">Hambúrguer de Grão de Bico e Molho de Curry Verde, cheinho de proteínas e nutrientes.</p>
-              <a href="#" class="btn btn-cor-especial" data-toggle="modal" data-target="#modal-receita">Veja a receita</a>
             </div>
           </article>
 
@@ -92,7 +94,6 @@
             <div class="card-body">
               <h5 class="card-title">Salada de Macarrão</h5>
               <p class="card-text">Saladinha de penne (sem ovos) com brócolis e tofu. Ideal para refeições mais leves.</p>
-              <a href="#" class="btn btn-cor-especial">Veja a receita</a>
             </div>
           </article>
 
@@ -101,7 +102,6 @@
             <div class="card-body">
               <h5 class="card-title">Pizza de cogumelo com queijo vegano</h5>
               <p class="card-text">Difícil conhecer alguém que não goste de pizza não é mesmo? Esta receita de pizza de massa integral e queijo vegano é uma delícia.</p>
-              <a href="#" class="btn btn-cor-especial">Veja a receita</a>
             </div>
           </article>
 
@@ -110,7 +110,6 @@
             <div class="card-body">
               <h5 class="card-title">Almôndegas de Lentilha</h5>
               <p class="card-text">Nutritivas, com uma quantidade grande de proteína vegetal, bons carboidratos e muita fibra. Sem falar do delicioso sabor.</p>
-              <a href="#" class="btn btn-cor-especial">Veja a receita</a>
             </div>
           </article>
 
@@ -119,7 +118,6 @@
             <div class="card-body">
               <h5 class="card-title">Lasanha de Beringela</h5>
               <p class="card-text">Lasanha de beringela, com fatias de abobrinha, temperada no azeite, sal, orégano. Prato perfeito para um almoço em família.</p>
-              <a href="#" class="btn btn-cor-especial">Veja a receita</a>
             </div>
           </article>
 
@@ -128,17 +126,16 @@
             <div class="card-body">
               <h5 class="card-title">Cookie Vegano</h5>
               <p class="card-text">Biscoitos veganos de chocolate duplo com avelãs para matar a vontade de comer doces.</p>
-              <a href="#" class="btn btn-cor-especial">Veja a receita</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="quem-somos">
+    <section id="depoimentos">
       <div class="py-5 px-2">
         <h2 class="text-center texto-cor-especial fonte-titulo">Depoimentos</h2>
-        <p class="text-center text-secondary">Conheça relatos de quem utiliza nosso site</p>
+        <p class="text-center text-secondary">Conheça relatos de quem utiliza nossas receitas</p>
       </div>
         <ul class="list-unstyled list-inline text-center d-lg-flex justify-content-lg-around">
           <li class="list-inline-item">
@@ -152,7 +149,7 @@
             <figure class="figure">
                 <img src="src/img/marcela.jpg" class="img-thumbnail borda-cor-especial thumb-redondo" alt="foto do rosto de uma pessoa">
                 <figcaption class="figure-caption text-center texto-cor-especial mt-3 fonte-titulo"><h4>Marcela</h4></figcaption>
-                <figcaption class="figure-caption text-center">Fiz a receita de Lasanha de Beringela e meu marido simplesmente amou!</figcaption>
+                <figcaption class="figure-caption text-center">Fiz a receita de Lasanha de Beringela<br />e meu marido simplesmente amou!</figcaption>
             </figure>
           </li>
           <li class="list-inline-item">
@@ -175,47 +172,13 @@
     </footer>
   </main>
 
-  <!-- modal receita -->
-
-  <div class="modal fade" id="modal-receita" tabindex="-1" role="dialog" aria-labelledby="modal-receita-titulo" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <dialog class="modal-content">
-        <header class="modal-header">
-          <h5 class="modal-title" id="modal-receita-titulo">Tigela de abacate</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </header> 
-        <article class="modal-body">
-          <img src="src/img/pizza.jpg" class="card-imagem-top pb-3" alt="tigela com salada de abacate, vista superior">
-          <h6>Ingredientes</h6>
-          <ul>
-            <li>1 cabeça de alface, lavada e folhas rasgadas em pedaços grandes</li>
-            <li>2 tomates, fatiados ou cortados em quatro</li>
-            <li>½ cebola, fatiada bem fina</li>
-            <li>1 abacate, fatiado ou em cubos</li>
-            <li>1 colher de sopa de coentro picado bem fino</li>
-            <li>Suco de 2 limões</li>
-            <li>2 colheres de sopa de azeite de oliva</li>
-            <li>Sal e pimenta a gosto</li>
-          </ul>
-          <h6>Modo de preparo</h6>
-          <p>Para fazer o molho, misture o coentro picado, o suco de limão, o azeite de oliva, o sal e a pimenta. Coloque a alface, os tomates, a cebola e o abacate em uma vasilha grande. Misture tudo e sirva.</p>
-        </article>
-        <footer class="modal-footer">
-          <button type="button" class="btn btn-cor-especial" data-dismiss="modal">Fechar</button>
-        </footer>
-      </dialog>
-    </div>
-  </div>
-
 <!-- modal contato -->
 
 <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="modal-contato-titulo" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <dialog class="modal-content">
       <header class="modal-header">
-        <h5 class="modal-title" id="modal-contato-titulo">Entre em contato</h5>
+        <h5 class="modal-title" id="modal-contato-titulo">Cadastre-se para obter nossas receitas!</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -223,17 +186,17 @@
       <article class="modal-body">
         <form action="http://localhost:8080/PSCalina/PSCalina/envia.php" method="post">
           <div class="form-group">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Seu nome" name="nome">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Seu nome" name="nome" required>
           </div>
           <label class="sr-only" for="inlineFormInputGroup">e-mail</label>
           <div class="input-group mb-2">
             <div class="input-group-prepend">
               <div class="input-group-text">@</div>
             </div>
-            <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Seu e-mail" name="email">
+            <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Seu e-mail" name="email" required>
           </div>
           <div class="form-group">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escreva sua mensagem" name="mensagem"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escreva sua mensagem" name="mensagem" required></textarea>
           </div>
 		  <footer class="modal-footer">
 			<input type="submit" class="btn btn-cor-especial" value="Enviar">
